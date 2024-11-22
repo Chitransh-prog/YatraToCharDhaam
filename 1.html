@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 8px;
+            width: 100hw;
+        }
+
+        .row > .col-md-3 {
+            padding: 10px;
+            position: relative;
+        }
+
+        .col-md-3 img {
+            max-width: 100%;
+            height: 50%;
+            border-radius: 20px;
+        }
+
+        .my-col:hover {
+            background-color: #007bff;
+            transform: scale(1.05);
+        }
+
+        .mybtn {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="./audio/softmusic.mp3" type="audio/mp3">
+    </audio>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">YatraToCharDhaam.com</a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="mailto:yatratochardhaam@gmail.com">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-dark" href="login-page.html" tabindex="-1">Login/Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">YatraToChardhaam.com</h1>
+        <p><i>~Embark on a spiritual journey to the Char Dham</i></p><br>
+
+        <div class="row">
+            <div class="col-md-3 text-light p-3 my-col">
+                <h2>Yamunotri</h2>
+                <img src="./images/Yamunotri_Dham.png" alt="Yamunotri-Dham"><br><br>
+                <p>The sacred birthplace of River Yamuna, symbolizing purity and protection.</p>
+                <a href="https://bit.ly/3O2G9P1" target="_blank" class="btn btn-light mybtn">Learn more</a>
+                
+            </div> 
+            <div class="col-md-3 text-light p-3 my-col">
+                <h2>Gangotri</h2>
+                <img src="./images/Gangotri.jpeg" alt="Gangotri"><br><br>
+                <p>Origin of the holy Ganga, a river revered for its power to cleanse sins.</p>
+                <a href="https://bit.ly/3ADucfF" target="_blank" class="btn btn-light mybtn">Learn more</a>
+                
+            </div> 
+            <div class="col-md-3 text-light p-3 my-col">
+                <h2>kedarnath</h2>
+                <img src="./images/kedarnath.jpeg" alt="kedarnath"><br><br>
+                <p>Home to one of Shiva's twelve Jyotirlingas, embodying strength and liberation.</p>
+                <a href="https://bit.ly/3O3t0Fy" target="_blank" class="btn btn-light mybtn">Learn more</a>
+                
+            </div>
+            <div class="col-md-3 text-light p-3 my-col">
+                <h2>Badrinath</h2>
+                <img src="./images/badrinath.jpg" alt="Badrinath Temple"><br><br>
+                <p>A revered Vishnu shrine where divine wisdom and peace converge.</p>
+                <a href="https://bit.ly/3YM64iW" target="_blank" class="btn btn-light mybtn">Learn more</a>
+    
+            </div>
+        </div> 
+    <br><a href="pricing.html" class="btn btn-warning text-black fw-bold">Book Now</a>
+    </div>
+<footer class="text-center text-lg-start">
+  <div class="text-center text-white py-3 bg-dark">
+    &copy; 2024 Copyright: 
+    <a class="text-white text-decoration-none" href="#">YatraToCharDhaam.com</a>
+  </div>
+</footer>
+</body>
+</html>
