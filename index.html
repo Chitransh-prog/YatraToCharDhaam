@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<video muted autoplay loop id="myVideo">
+<video muted autoplay loop id="myVideo" class="w-100" style="max-height: 50vh; object-fit: cover;">
   <source src="/ChaarDhaam.mp4" type="video/mp4">
 </video>
 
@@ -20,19 +20,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">YatraToCharDhaam.com</a> 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link text-dark" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="mailto:yatratochardhaam@gmail.com">Contact Us </a>
+          <a class="nav-link text-dark" href="mailto:yatratochardhaam@gmail.com">Contact Us</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-dark" href="login-page.html" tabindex="-1">Login/Register</a>
@@ -42,17 +42,21 @@
   </div>
 </nav>
 
-<div class="container">
-    <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Welcome to YatraToChardhaam.com</h1>
-    <p>Embark on a spiritual journey to the Char Dham</p><br>
-    <button type="button" class="btn btn-light" onclick="MyFunc()">Explore Now</button>
+<div class="container text-center my-5">
+    <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        Welcome to YatraToChardhaam.com
+    </h1>
+    <p class="lead">Embark on a spiritual journey to the Char Dham</p>
+    <button type="button" class="btn btn-primary" onclick="MyFunc()">Explore Now</button>
 </div>
+
 <footer class="text-center text-lg-start">
   <div class="text-center text-white py-3 bg-dark">
     &copy; 2024 Copyright: 
     <a class="text-white text-decoration-none" href="#">YatraToCharDhaam.com</a>
   </div>
 </footer>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const audio = document.getElementById("backgroundAudio");
